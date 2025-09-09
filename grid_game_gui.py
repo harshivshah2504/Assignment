@@ -280,7 +280,6 @@ class GridGameGUI:
         if self.current_episode >= self.training_episodes:
             messagebox.showinfo(f"Finished {self.training_episodes} episodes.")
             self.training_status_label.config(text="Training complete.")
-            self.epsilon_label.config(text="")
             return
 
         state = self.reset_game(is_manual_reset=False)
